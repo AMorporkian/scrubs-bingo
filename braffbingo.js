@@ -37,7 +37,8 @@ const items = [
   "Trevor, the wiki master, makes an appearance",
   "Zach refuses to ask Bill to avoid a 5, 6, 7, 8",
   "Donald's package is mentioned",
-
+  "Some portion of 'Guy Love' is sung",
+  "Donald and Zach discuss docking"
 ]
 function newBingo() {
   usedItems = []
@@ -53,7 +54,9 @@ function setSquare(thisSquare) {
     setSquare(thisSquare)
   } else {
   usedItems[newItem] = true;
-  document.getElementById(currSquare).innerHTML = items[newItem];
+  const el = document.getElementById(currSquare);
+  el.innerHTML = items[newItem];
+  el.classList.remove("selected")  
   }
   
 }
@@ -73,3 +76,21 @@ function choose() {
   let index = Math.floor(Math.random() * items.length);
   return items[index];
 }
+
+function setSelected(el) {
+  if (el.srcElement.classList.contains("selected")) {
+    el.srcElement.classList.remove("selected")
+  } else {
+    el.srcElement.classList.add("selected")
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  newBingo();
+  const boxes = document.getElementsByClassName("bingoBox");
+
+  for (let i=0; i<boxes.length; i++) {
+    boxes[i].addEventListener("click", i=>setSelected(i));
+    boxes[i].addEventListener("tap", i=>setSelected(i));
+  };
+});

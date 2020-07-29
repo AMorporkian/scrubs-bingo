@@ -8,12 +8,9 @@
 <title>Bingo</title>
 
 <link rel="stylesheet" type="text/css" href="braffbingo.css" />
-
-<script type="text/javascript" src="braffbingo.js"></script>
-
 </head>
 
-<body onload="newBingo()">
+<body">
 
 	<div id="container">
     <div id="header">
@@ -38,7 +35,7 @@
 			<div class="row" >
 				<div class="bingoBox" id="square10"> &nbsp;</div>
 				<div class="bingoBox" id="square11"> &nbsp;</div>
-				<div class="bingoBox" id="squarefree"> FREE</div>
+				<div class="bingoBox selected" id="squarefree"><img src="./gimme.webp" id="gimme" alt="Free Spot"></div>
 				<div class="bingoBox" id="square12"> &nbsp;</div>
 				<div class="bingoBox" id="square13"> &nbsp;</div>
 			</div>
@@ -62,5 +59,8 @@
 <p><a href="#" onclick="anotherCard()">Click here</a> to create a new card</p>
 
 </body>
+
+<script type="text/javascript" src="braffbingo.js"></script>
+
 
 </html>

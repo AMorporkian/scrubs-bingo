@@ -43,17 +43,19 @@ p a {
 }
 .bingoBox {
   display: flex;
-  
-  border: 5px solid black;
 
+  border: 5px solid black;
   width: 20%;
   height: 140px;
   align-items: center;
   justify-content: center;
 
 }
+#gimme {
+  width: 100%;
+}
 
 
-.orange {
+.selected {
   background: #9b59b6;
 }
