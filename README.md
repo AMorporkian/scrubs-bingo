@@ -1,1 +1,1 @@
-A very simple Scrubs Rewatch bingo generator. Feel free to fork and PR if you want to add more choices! If you don't know how to do that, but just want to add some suggestions, open an issue and I'll ad it myself!
+A very simple Scrubs Rewatch bingo generator. Feel free to fork and PR if you want to add more choices! If you don't know how to do that, but just want to add some suggestions, open an issue and I'll add it myself!
