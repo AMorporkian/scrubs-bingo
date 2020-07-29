@@ -1,0 +1,59 @@
+body {
+  background: #1abc9c;
+  display: flex;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, p {
+  font-family: 'Roboto', sans-serif; font-size: 20pt;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;c:
+  padding: 30px;
+  color: white;
+}
+
+p a {
+  text-decoration: none;
+  color: #f1c40f;
+}
+
+#squarefree {
+}
+
+#bingoTable {
+  grid-auto-rows: 1fr;
+  margin: 0 auto;
+  text-align: center;
+  width: 750px;
+  height: 750px;
+  background: white;
+
+  box-sizing: border-box;
+  display: grid;
+  
+}
+.row {
+  display: flex;
+
+
+}
+.bingoBox {
+  display: flex;
+  
+  border: 5px solid black;
+
+  width: 20%;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.orange {
+  background: #9b59b6;
+}
